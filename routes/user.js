@@ -1,6 +1,6 @@
 const express = require('express');
 const addUser = require('../services/addUserDB');
-const checkRecord = require('../services/checkUser');
+const checkRecord = require('../middlewares/checkUser');
 const routes = express.Router();
 
 routes.get('/', (req, res) => {
