@@ -10,7 +10,7 @@ routes.get('/', (req, res) => {
 routes.post('/new', checkRecord, async (req, res) => {
     const data = req.body;
     const user = await addUser(data);
-    res.status(200).json({message: 'Cadastro Efetuado', user});
+    res.status(200).json({message: 'Cadastro Realizado', user});
 });
 
 
